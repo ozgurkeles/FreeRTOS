@@ -338,8 +338,8 @@ void vAssertCalled( const char * const pcFileName,
          * value. */
         while( ulSetToNonZeroInDebuggerToContinue == 0 )
         {
-            __asm volatile ( "NOP" );
-            __asm volatile ( "NOP" );
+            __asm volatile ( "nop" );
+            __asm volatile ( "nop" );
         }
     }
     taskEXIT_CRITICAL();

@@ -131,7 +131,7 @@ extern void vAssertCalled( const char * const pcFileName,
 
 /* Insert NOPs in empty decision paths to ensure both true and false paths
  * are being tested. */
-    #define mtCOVERAGE_TEST_MARKER()    __asm volatile ( "NOP" )
+    #define mtCOVERAGE_TEST_MARKER()    __asm volatile ( "nop" )
 
 /* Ensure the tick count overflows during the coverage test. */
     #define configINITIAL_TICK_COUNT        0xffffd800UL

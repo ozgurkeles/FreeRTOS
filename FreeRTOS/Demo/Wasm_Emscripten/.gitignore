@@ -2,3 +2,7 @@
 build/
 src/FreeRTOS
 src/FreeRTOS-Plus
+Demo
+freertos_kernel
+FreeRTOS-Plus
+CMakeLists.txt.user
