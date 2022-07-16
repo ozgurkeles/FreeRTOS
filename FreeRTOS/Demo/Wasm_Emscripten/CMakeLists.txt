@@ -46,7 +46,7 @@ target_include_directories(Wasm_Emscripten
 if( ${CMAKE_SYSTEM_NAME} MATCHES "Emscripten")
     add_definitions("-DEMSCRIPTEN")
     set(CMAKE_EXECUTABLE_SUFFIX ".html")
-    set(EMCC_FLAGS "-sWASM_WORKERS")
+    set(EMCC_FLAGS "-pthread")
     set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${EMCC_FLAGS}")
     set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} ${EMCC_FLAGS}")
     set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -s EXPORTED_FUNCTIONS=[_main,_malloc,_free] -s EXPORTED_RUNTIME_METHODS=[ccall,cwrap] ${EMCC_FLAGS}")

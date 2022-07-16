@@ -86,7 +86,7 @@
 
 /*-----------------------------------------------------------*/
 extern void main_blinky( void );
-extern void main_full( void );
+extern int main_full( void );
 static void traceOnEnter( void );
 
 /*
